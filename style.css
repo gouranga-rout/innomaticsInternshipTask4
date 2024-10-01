@@ -1,0 +1,828 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-size: 16px;
+ box-sizing: border-box;
+ }
+
+html {
+ scroll-behavior: smooth;
+ }
+
+/*enquiry section*/
+ .enquiry-section {
+   justify-content: space-between;
+   background-color: crimson;
+   color: white;
+   text-align: center;
+   padding: .1rem;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.info {
+  margin: 0 1rem 0 0;
+}
+
+.info h3 {
+  font-weight: 200;
+ }
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+/*  background-color: green;*/
+  width: 14rem;
+ }
+
+.contact-buttons div {
+ flex: 0 1 calc(50% - .1rem); 
+ border: .05rem solid white;
+  background-color: black;
+  color: white;
+  border-radius: .5rem;
+  margin-bottom: .1rem;
+  font-weight: 200;
+  padding: .1rem .2rem;
+}
+ 
+
+
+/*nav bar*/
+.nav-bar {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+  padding: .1rem .2rem;
+  border-bottom: 1px solid gray;
+ }
+
+.nav-bar .logo {
+  width: 17rem;
+  height: 3rem;
+  margin-top: .3rem;
+ }
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.button-section {
+  display: flex;
+  gap: 2rem;
+/*  background-color: pink;*/
+  padding: .2rem;
+ }
+
+ .menu-button, .pay-now{
+/*    background-color: green;*/
+    padding: .1rem;  
+  
+ }
+ 
+.menu-button .menu,
+.pay-now .pay {
+   color: white;
+   font-size: 1.3rem;
+   background-color: black;
+   border: none;
+   padding: .5rem .3rem;
+   border-radius: .5rem;  
+}
+
+.menu-button {
+  position: relative;
+  }
+
+
+
+.menu-button .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: .03rem solid black;
+  border-radius: 5px;
+  width: 150px;
+  z-index: 1000;
+  
+ }
+
+
+.menu-button .dropdown-menu a {
+  display: block;  
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+ }
+
+.dropdown-menu a:hover {
+  background-color: crimson;
+  color: white;
+ }
+
+.menu-button:hover  .dropdown-menu {
+  display: block;
+  
+ }
+
+/*banner section*/
+ .banner {
+  width: 100%;
+ }
+
+ .banner img {
+  width: 100%;
+ }
+ 
+
+/*content*/
+ .container {
+   padding: 2rem 2rem;
+  
+ }
+
+ .container h1 {
+   font-size: 1.5rem;
+   font-weight: 800;
+   color: red;
+   text-align: center;
+ }
+
+
+.container p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+ }
+
+.red {
+     color: red;
+    font-weight: bold;
+ }
+        
+.black {
+    color: black;
+    font-weight: bold;
+  }
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+ }
+
+
+
+.view-more {
+   color: white;
+   background-color: crimson;
+   border: none;
+   border-radius: 1rem;
+   padding: .7rem 1rem;
+   font-size: 1.3rem;
+ }
+
+
+ /*what we are section*/
+ 
+.container .heading {
+  margin-top: 3rem;  
+ }
+
+.heading h1 {
+  color: #05175c;
+  font-size: 2rem;
+ }
+
+
+.four-div-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  
+ }
+
+.four-div-container .details {
+  border: .05rem solid #ccc;
+  border-bottom: .2rem solid #ccc;
+  border-radius: .6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+ }
+
+.four-div-container .details:hover  {
+  border-bottom: .2rem solid #ff0000;
+}
+
+
+.details .icon {
+ width: 3rem;
+ height: 3rem;
+ text-align: center;
+ margin-top: 1rem;
+ margin-bottom: 2.3rem;
+ } 
+
+
+.icon i {
+  font-size: 3rem;
+  color: crimson;
+ }
+
+
+.details .intro  h2{
+  color: #05175c;
+  text-align: center;
+ }
+
+
+
+/*register now sticky notes*/
+.register-now {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: crimson;
+  padding: 0.4rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-weight: 400;
+  cursor: pointer;
+  
+ }
+
+.register-now a {
+  text-decoration: none;
+  color: white;
+ }
+
+.chat {
+ position: fixed;
+ right: 0.625rem;
+ bottom: 0.625rem;
+ background-color: crimson;
+ color: white;
+ padding: 0.625rem;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: 400;
+ cursor: pointer;
+ }
+
+/*courses section start */
+.courses-container {
+ width:100%;
+ background-color:black;
+ padding:1rem 2rem;
+ }
+
+.courses-container .heading {
+ align-items: center;
+ justify-content: center;
+ width: 15rem;
+ margin: 1rem auto;
+ }
+
+.courses-container .heading h1 {
+ color: white;
+ font-size: 1.5rem;
+ padding: .8rem;
+ text-align: center;
+ justify-content: center;
+ margin-bottom: 2rem;
+ }
+
+.courses-container .courses-boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+   
+ }
+
+.courses-boxes .course {
+  border: 1.5px solid #fff;;
+  solid: #fff;   
+  padding: .2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+ }
+.courses-boxes .course:hover {
+ border: .1rem solid crimson;
+ }
+
+.course .course-pic {
+  width: 100%;  
+  padding: 0;
+ }
+
+.course-pic img {
+  width: 100%;
+  height: auto;
+ }
+
+.course .course-heading {
+ margin-top: 1rem;
+  }
+ 
+ .course-heading h2 {
+  color: white;
+  text-align: center;
+  padding: .3rem;
+ }
+
+.course .para {
+  align-items:center;
+  margin-top: 1rem;
+ }
+
+.course .para p {
+ color: white;
+ text-align: center; 
+ }
+
+.course .more-btn {
+  background-color: black;
+  color: #fff;
+  align-items: center;
+  margin: 1.5rem auto;
+  padding: .5rem .9rem;
+  border: 1.5px solid #fff;
+  border-radius: .5rem;
+ }
+
+.course .more-btn:hover {
+  background-color: crimson;
+ 
+ }
+  
+
+/*advantages section start*/
+
+.advtgs-section {
+  padding: 1rem 2rem;
+ }
+
+.advtgs-section .heading {
+ align-items: center;
+ }
+
+.advtgs-section .heading h1 {
+ text-align: center;
+ font-size: 1.5rem;
+} 
+
+ .points  {
+  border: 1px solid #000;
+  margin-top: 1.5rem;
+  padding: .5rem 1rem;
+  
+ }
+
+
+ .points ul {
+   list-style-position: outside;
+   padding-left: .8rem;
+   margin-bottom: 1rem;
+  
+ }
+
+
+ .points ul li {
+   line-height: 1.5; 
+ }
+
+ .points ul li::marker {
+   color: crimson;
+   font-size: 1.5rem;
+ }
+
+/*video iframe section start*/
+.video-container {
+   padding: 1rem 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+ }
+
+.video-container .heading {
+   align-items: center;
+ }
+
+.video-container .heading h1 {
+  text-align: center;
+  font-size: 1.5rem;
+ }
+
+.video-container .video {
+  margin-top: 1.5rem;
+ 
+ }
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.more-btn {
+  color: #000;
+  align-items: center;
+  margin: 1.5rem auto;
+  padding: .5rem .9rem;
+  border: 1.5px solid crimson;
+  border-radius: .5rem;
+  background-color: #fff;  
+ }
+
+.more-btn:hover {
+  background-color: crimson;
+  color: #fff;
+ }
+
+
+
+/*last section start*/
+
+.last-section  {
+  background-color: #000;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .last-section .last-logo {
+   margin: .1rem auto;
+ }
+
+ .last-logo img {
+  width: 100%;
+  height: 100%;
+ }
+ .last-section .last-text {
+   margin: 0 auto;
+ }
+
+ .last-text p {
+   color: #fff;
+   font-size: 1.3rem;
+/*   font-weight: 200;*/
+   font-family: sans-serif;
+   align-items: center;
+   justify-content: center;
+   line-height: 1.3;
+   text-align: justify;
+   }
+
+ .last-section .imp {
+    color: #f5c6cb;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.last-section .social-icons {
+    display: flex;
+/*    justify-content: space-between; */
+    width: 100%; 
+    align-items: left;
+    
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem; 
+    height: 2.5rem;
+    margin: 0.3rem;
+    border-radius: .3rem;
+    font-size: 1.5rem; 
+    color: white;
+    text-decoration: none;
+    gap: 0;
+}
+
+.social-icons i {
+  display: flex;
+  align-items: left;
+ }
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.facebook {
+    background-color: #3b5998; 
+}
+
+.instagram {
+    background-color: #e4405f; 
+}
+
+.x {
+    background-color: #000; 
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.courses-link {
+  margin-top: 1rem;
+ } 
+
+.courses-link h2 {
+  color: red;
+  text-decoration: underline;
+   font-family: sans-serif;
+ 
+  font-size: 1.3rem;
+ }
+
+
+ .courses-link ul {
+  list-style: none;
+  padding: 0;
+}
+
+ .courses-link ul li {
+  margin: 10px 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+/*contact details */
+ .contact-container {
+           /* max-width: 600px;*/
+            margin: 1rem auto;
+        }
+      .contact-container  h1 {
+            color: #ff0000;
+             font-size: 1.3rem;
+            text-decoration: underline;
+        }
+      .contact-container  .location {
+/*            margin-bottom: 20px;*/
+             margin: 20px 0;
+        }
+      .contact-container  .location i {
+            color: #ff0000;
+            margin-right: 10px;
+        }
+     .contact-container   .location h2 {
+            display: inline;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+        }
+     .contact-container   .location p {
+            margin: 5px 0;
+             color: #fff;
+             
+        }
+     .contact-container   .contact-info {
+            margin-top: 20px;
+        }
+   
+     .contact-container   .contact-info p {
+            color: #fff;
+            display: inline;
+        }
+  
+      .contact-container  .contact-info i {
+            color: #ff0000;
+            margin-right: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer section start*/
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer-container p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0rem;
+    line-height: 1.2rem;
+}
+
+.footer-container a {
+   text-decoration: none;
+ }
+
+.footer-container span {
+  color: crimson;
+ }
+/*footer section ends here*/
+
+
+
+/*Responsive for Laptop screen*/
+@media (min-width: 768px) and (max-width: 1200px){
+
+.enquiry-section {
+  flex-direction: row;
+ }
+
+.enquiry-section .contact-buttons {
+ flex-direction: row;
+ }
+
+ .nav-bar {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+ }
+ 
+.logo {
+  width: 20rem;  
+ }
+ 
+.button-section {
+  gap: 1rem;
+ }
+ 
+.menu-button .menu,
+.pay-now .pay {
+  font-size: 1.4rem;
+  padding: 0.5rem 0.7rem;
+ }
+ 
+.dropdown-menu {
+  width: 11.25rem;
+ }
+
+.dropdown-menu a {
+  font-size: 1.5rem;
+ }
+ 
+ .banner img {
+  width: 100%;
+  height: 55rem;
+ }
+
+
+.container {
+   padding: 2rem 3rem;
+ }
+
+.container h1 {
+   color: black;
+   font-size: 1.4rem;
+ }
+
+
+ .center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+.center .red {
+   font-size: 1.5rem;
+ }
+
+
+
+.container p {
+    font-size: .95rem;
+ }
+
+
+.four-div-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+.four-div-container .details {
+   flex: 0  1 calc(50% - 1rem);
+   margin-bottom: 1rem;
+}
+
+
+
+.courses-container {
+ padding:1rem 3rem;
+ }
+
+
+.courses-container .courses-boxes {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+.courses-boxes .course {
+  flex: 0 1 calc(33% - 1rem);
+  margin-bottom: 1.5rem;
+
+/*  border: 1.5px solid #fff;;
+  solid: #fff;
+  padding: .2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;*/
+ }
+
+
+.advtgs-section {
+  padding: .5rem 5rem;
+  margin: 2rem;
+ }
+
+.points ul {
+   list-style-position: outside;
+   padding-left: 7rem;
+/*   margin-bottom: 1rem;*/
+ }
+
+
+
+ .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+ }
+
+.video-container .video {
+   width: 50rem;
+   height: 25rem;
+   margin: 1.5rem auto;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+.more-btn {
+  margin-top: .5rem;
+  font-size: 1.3rem;
+ }
+
+.last-section  {
+  padding: 3rem;
+ }
+
+ 
+  
+}
