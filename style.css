@@ -827,3 +827,138 @@ html {
  
   
 }
+
+
+
+
+
+
+/* Responsive for Desktop screen */
+@media (min-width: 1200px) {
+
+  .enquiry-section {
+    flex-direction: row;
+  }
+
+  .enquiry-section .contact-buttons {
+    flex-direction: row;
+  }
+
+  .nav-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+  }
+
+  .logo {
+    width: 25rem;
+  }
+
+  .button-section {
+    gap: 1.5rem;
+  }
+
+  .menu-button .menu,
+  .pay-now .pay {
+    font-size: 1.6rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .dropdown-menu {
+    width: 12.5rem;
+  }
+
+  .dropdown-menu a {
+    font-size: 1.6rem;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 65rem;
+  }
+
+  .container {
+    padding: 3rem 4rem;
+  }
+
+  .container h1 {
+    color: black;
+    font-size: 1.6rem;
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .center .red {
+    font-size: 1.7rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+
+  .four-div-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .four-div-container .details {
+    flex: 0 1 calc(33% - 1rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .courses-container {
+    padding: 1.5rem 4rem;
+  }
+
+  .courses-container .courses-boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .courses-boxes .course {
+    flex: 0 1 calc(33% - 1rem);
+    margin-bottom: 2rem;
+  }
+
+  .advtgs-section {
+    padding: 1rem 6rem;
+    margin: 3rem;
+  }
+
+  .points ul {
+    list-style-position: outside;
+    padding-left: 8rem;
+  }
+
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .video-container .video {
+    width: 60rem;
+    height: 30rem;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .more-btn {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .last-section  {
+    padding: 4rem;
+  }
+}
+
